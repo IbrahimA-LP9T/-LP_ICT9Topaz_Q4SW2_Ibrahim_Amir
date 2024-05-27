@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Seatwork 2 - Ibrahim</title>
+
+		<style type="text/css">
+			.alert {
+ 				background-color: lightgray;
+  				padding: 15px;
+  				width: 600px;
+  				border: dashed;
+  				border-width: 5px;
+  				border-color: gray;
+  				text-align: center;
+  			}
+  			button{
+  				padding: 15px;
+  				background-color: lightgreen;
+  				border-spacing: 15px;
+  			}
+
+		</style>
+
+</head>
+<body>
+					<div class="alert">
+  						
+					<div class="col-md-6">
+
+				<img src="https://cdn3d.iconscout.com/3d/premium/thumb/calculator-victory-6739359-5572108.png">
+
+
+				<form>
+
+				Enter the value of x: <input type="text" id="x">
+
+				<br> 
+				</br>
+
+				Enter the value of y: <input type="text" id="y">
+
+				<h3 id="product"></h3>
+
+				<h3 id="equal"></h3>
+
+				<h3 id="raised"></h3>
+
+				<h3 id="remainder"></h3>
+
+				<br>
+
+					</div>
+					</div>
+
+					<div>
+
+        <button type="Submit" onclick="comparison()" class="btn btn-danger btn-lg">product of x and y</button>
+
+        <button type="Submit" onclick="equation()" class="btn btn-warning btn-lg">Check if x is equal to y</button>
+
+        <br>
+
+        <button class="btn btn-success btn-lg" onclick="exponentation()">x raised to y</button>
+
+        <button class="btn btn-primary btn-lg" onclick="modulus()" class="btn btn-primary btn-lg">Get the remainder</button>
+
+
+
+				</form>
+
+
+		<script type="text/javascript">
+
+       		   function comparison(){
+         		var num1 = document.getElementById("x").value;
+         		var num2 = document.getElementById("y").value;
+		        var product = Number(num1) * Number(num2);
+		        window.alert("The product of X and Y is: " + product);
+		       }
+		       function equation(){
+				 var num1 = document.getElementById("x").value;
+		         var num2 = document.getElementById("y").value;
+		         var equal = Number(num1) == Number(num2);
+		        window.alert("The statement X is equal to Y is: " + equal);
+		       }
+		        function exponentation(){
+		         var num1 = document.getElementById("x").value;
+		         var num2 = document.getElementById("y").value;
+		         var raised = Number(num1) ** Number(num2);
+		        window.alert("X raised to Y is: " + raised);
+		       }
+		        function modulus(){
+		         var num1 = document.getElementById("x").value;
+		         var num2 = document.getElementById("y").value;
+		         var remainder = Number(num1) % Number(num2);
+		        window.alert("The remainder of X divided by Y is: " + remainder)
+		       }
+
+    	</script>
+
+		</script>
+
+</body>
+</html>
